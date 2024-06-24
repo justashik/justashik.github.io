@@ -369,71 +369,6 @@
     <!-- end offer section -->
 
     <!-- food section -->
-    <section class="about_section layout_padding">
-
-        <div class="w3-content w3-display-container">
-            <div class="heading_container">
-                <h2>
-                    Experience Our Specialties
-                </h2>
-            </div>
-            <div class="w3-display-container mySlides">
-                <img src="images/food/1.jpg" style="width:100%">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Da Smash
-                </div>
-            </div>
-
-            <div class="w3-display-container mySlides">
-                <img src="images/food/2.jpg" style="width:100%">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Biscoff Milkcake
-                </div>
-            </div>
-
-            <div class="w3-display-container mySlides">
-                <img src="images/food/3.jpg" style="width:100%">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Halloumi Fries
-                </div>
-            </div>
-
-            <div class="w3-display-container mySlides">
-                <img src="images/food/4.jpg" style="width:100%">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Wings
-                </div>
-            </div>
-
-            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-        </div>
-
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (n > x.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = x.length
-                }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                x[slideIndex - 1].style.display = "block";
-            }
-        </script>
-    </section>
 
     <!-- end food section -->
 
@@ -441,7 +376,69 @@
 
     <section class="about_section layout_padding">
         <div class="container  ">
+            <div class="w3-content w3-display-container">
+                <div class="heading_container">
+                    <h2>
+                        Experience Our Specialties
+                    </h2>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/food/1.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Da Smash
+                    </div>
+                </div>
 
+                <div class="w3-display-container mySlides">
+                    <img src="images/food/2.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Biscoff Milkcake
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img src="images/food/3.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Halloumi Fries
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img src="images/food/4.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Wings
+                    </div>
+                </div>
+
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+                <p> </p>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
             <div class="row">
                 <div class="col-md-6 ">
                     <div class="img-box">
